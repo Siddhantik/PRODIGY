@@ -1,7 +1,7 @@
 import random
 
 def main():
-    # Generate a random number between 1 and 100
+    
     random_number = random.randint(1, 100)
     attempts = 0
 
@@ -12,7 +12,6 @@ def main():
     while True:
         guess = input("Enter your guess: ")
 
-        # Ensure the user input is a valid integer
         if not guess.isdigit():
             print("Please enter a valid integer.")
             continue
@@ -28,5 +27,6 @@ def main():
             print(f"Congratulations! You guessed the number {random_number} correctly in {attempts} attempts.")
             break
 
-if _name_ == "_main_":
-    main()
+if __name__ == "__main__":
+    main()
+
